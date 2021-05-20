@@ -11,10 +11,11 @@
 <body style="background-color: #eaebed;">
     <main style="display: inline-block; width: 50%; margin-top: 100px; margin-left: 25%;">
         <img style="width: 40%; float: left; margin-right: 10%;" src="./serlokas.jpg" alt="Serlokas su pypke menesienoje">
-        <div style="width: 50%; float: left; margin-top: 50px;">
-            <h1>404</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptates esse facilis quibusdam repellat.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <div style="width: 50%; float: left; margin-top: 50px; text-align: center;">
+            <h1 style="display: inline-block; width: 100%;">404</h1>
+            <p style="display: inline-block; width: 100%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptates esse facilis quibusdam repellat.</p>
+            <p style="display: inline-block; width: 100%;">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <a style="display: inline-block; padding: 20px; padding-top: 15px; padding-bottom: 15px; background-color: #696F89; color: white; text-decoration: none; text-transform: uppercase;" href="https://www.example.com" target="_blank">Back home</a>
         </div>
     </main>
 </body>
@@ -23,14 +24,16 @@
 
 <!-- 
 
+VISOS TEKSTINES (IR NE KITOKIAS) STILIAUS SAVYBES GALI BUTI PAVELDETOS IS TEVU I VAIKUS;
+
 stiliaus savybes struktura
 savybes-pavadinimas: reiksme;
-
 
 matavymo vienetai:
 px, %
 
 elementu atvaizdavimo budas:
+display: inline;                (default'ine reiksme <span> ir <a> tag'ams)
 display: block;                 (default, ir taikomas daugumai elementu, ir elementai krenta vienas po kitu)
 display: inline-block;          (jei uztenka vietos, elementai krenta i viena eile)
 float: left;                    (priverstinis elementu pritraukimas nurodyta kryptimi)
@@ -43,9 +46,21 @@ margin-right: 25%;
 margin-bottom: 25%;
 margin-left: 25%;
 
+elemento turinio atsistumimas iki to paties elemento krastu (vidinis issiputimas):
+padding: 25%;                  // visomis kryptimis (aplinkui)
+padding-top: 25%;
+padding-right: 25%;
+padding-bottom: 25%;
+padding-left: 25%;
+
 "Sventa Marija" (elementu statymas i viena eile)
-display: inline-block;
-width: 100%;
-float: left;
+display: inline-block;      (butina parasyti visada)
+width: 100%;                (nurodyti butina, bet reiksme turi buti adekvati)
+float: left;                (rasome, jei elementai turi buti vienoje eileje)
+
+teksto lygiavimas:
+text-align: left;
+text-align: center;
+text-align: right;
 
 -->
